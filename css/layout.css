@@ -145,4 +145,7 @@ img{
 }
 .socialmedia a{
     padding:5px;
+  }
+.socialmedia i:hover{
+    transform: scale(1.5);
 }
