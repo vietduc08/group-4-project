@@ -115,6 +115,7 @@ img{
     float:left;
 }
 .socialmedia{
+    padding-top:20px;
     float:right;
     padding-right:70px;
 }
@@ -137,4 +138,11 @@ img{
 }
 .logo img{
     width:250px;
+}
+.socialmedia h3{
+    color:rgba(255, 183, 0, 0.8);
+    font-size:25px;
+}
+.socialmedia a{
+    padding:5px;
 }
