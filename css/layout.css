@@ -38,10 +38,9 @@ img{
    float:left;
    padding-left:80px;
 }
-.logo img{
-    max-width:100px;
 
-}
+
+
 .top-page input{
     font-size:20px
 
@@ -66,11 +65,22 @@ img{
 .navigator{
     float:left;
     padding:20px 0;
+    color: rgba(255, 183, 0, 0.8);
 
+}
+.navigator a{
+    color: rgba(255, 183, 0, 0.8);
+}
+.navbar-band{
+    color: rgba(255, 183, 0, 0.8);
+}
+.navigator button{
+    color: rgba(255, 183, 0, 0.8);
 }
 .navigator li{
     float: left;
     padding-right:55px;
+    color: rgba(255, 183, 0, 0.8);
 }
 .navigator li a{
     color: rgba(255, 183, 0, 0.8);
@@ -112,4 +122,7 @@ img{
 }
 .footer{
     height:200px;
+}
+.logo img{
+    width:250px;
 }
