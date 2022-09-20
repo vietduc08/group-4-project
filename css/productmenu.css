@@ -1,0 +1,33 @@
+.product{
+    width: calc(25% - 20px);
+    float:left;
+    padding:25px;
+    text-align: center;
+    border: 1px solid green;
+    margin:10px;
+}
+.text-center{
+    padding:20px;
+}
+.main h1{
+    font-size:25px;
+    color: rgba(0, 0, 0, 0.73);
+}
+.main h6{
+    font-size:20px;
+    color: rgba(0, 0, 0, 0.73);
+}
+.main button{
+    font-size: 20px;
+    padding:5px;
+    width:100%;
+}
+.main button:hover{
+    transform: scale(1.1);
+}
+.main a{
+    text-decoration: none;
+}
+.main img{
+    height: 150px;
+}

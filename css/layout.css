@@ -30,16 +30,15 @@ img{
     margin: 0 auto;
 }
 .header{
-    background-color: rgb(19, 19, 19);
+    background-color: rgb(23, 21, 21);
     float:left;
-
 }
 .logo{
    float:left;
    padding-left:80px;
 }
 .logo img{
-    max-width:100px;
+    width:250px;
 
 }
 .top-page input{
@@ -50,13 +49,18 @@ img{
      float:right;
     padding:40px 0;
 }
-.top-page a{
-    padding-left:10px;
-    font-size: 20px;
+.top-page button{
+    background-color: rgb(19, 19, 19);
+    border: 1px solid #936c16;
+    color: rgba(255, 183, 0, 0.8);
+    padding: 5px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
 
 }
 .top-page i{
-    color:rgba(255, 183, 0, 0.8);
+    color: rgba(255, 183, 0, 0.8);
 }
 .navigation{
     border-top:2px solid #936c16;
@@ -66,29 +70,38 @@ img{
 .navigator{
     float:left;
     padding:20px 0;
+}
 
+.navigator .navbar{
+    background-color: rgb(19, 19, 19);
 }
 .navigator li{
     float: left;
     padding-right:55px;
 }
-.navigator li a{
+.navigator a{
     color: rgba(255, 183, 0, 0.8);
     font-size:15px;
 }
+.navigator .btn{
+    color: rgba(255, 183, 0, 0.8);
+    font-size:15px;
+}
+
 .cart{
     float:right;
-    padding:15px 80px;
+    padding:25px 100px;
 }
 .cart i{
-    font-size:25px;
+    font-size:30px;
     color: rgba(255, 183, 0, 0.8);
 }
 .footer{
-    padding:20px 0;
     border-top:2px solid #936c16;
     background-color: rgb(19, 19, 19);
+    padding: 20px;
 }
+
 .contact{
     float:left;
 }
@@ -108,5 +121,8 @@ img{
     color:rgba(255, 183, 0, 0.8);
 }
 .main{
-    height:400px;
+    min-height: calc(100vh - 200px);
+}
+.footer{
+    height:200px;
 }

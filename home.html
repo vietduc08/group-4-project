@@ -9,39 +9,59 @@
     <link rel="stylesheet" href="css/layout.css"/>
     <link rel="stylesheet" href="libs/fontawesome/css/all.css"/>
     <link rel="stylesheet" href="css/home.css"/>
+    <link rel="stylesheet" href="libs/bootstrap5.2/css/bootstrap.css">
 </head>
 <body>
-    <header class="section header">
+<header class="section header">
     <div class="container">
         <div class="logo">
-            <a href="#"><img src="img/logo2.jpeg" alt="logo"/></a>
+            <a href="#"><img src="img/logo.png" alt="logo"/></a>
         </div>
         <div class="top-page">
 
-                <form method="get" action="#">
-                    <input type="text" placeholder="Search.."/>
-                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                </form>
+            <form method="get" action="#">
+                <label><input type="text" placeholder=" Search.."/></label>
+                <button type="button">SEARCH</button>
+            </form>
         </div>
 
     </div>
-    </header>
-    <nav class="section navigation">
-        <div class="container">
-            <div class="navigator">
-                <ul>
-                    <li><a href="#">Trang chủ</a></li>
-                    <li><a href="#">Danh mục</a></li>
-                    <li><a href="#">Sản phẩm</a></li>
-                    <li><a href="#">Chúng tôi</a></li>
-                </ul>
+</header>
+<nav class="section navigation">
+    <div class="container">
+        <div class="navigator">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Trang Chủ</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
 
-            </div>
-            <div class="cart">
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-           </div>
+                            <div class="btn-group">
+                                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Danh mục
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">On sale</a></li>
+                                    <li><a class="dropdown-item" href="#">Earrings</a></li>
+                                    <li><a class="dropdown-item" href="#">Pendants</a></li>
+                                    <li><a class="dropdown-item" href="#">Bracelets</a></li>
+                                </ul>
+                            </div>
+                            <a class="nav-link" href="#">Sản phẩm</a>
+                            <a class="nav-link" href="#">Chúng tôi</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
-    </nav>
+        <div class="cart">
+            <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+        </div>
+    </div>
+</nav>
 <!--    Phần nội dung-->
     <section class="section main">
         <div class="container">
@@ -49,30 +69,36 @@
         </div>
     </section>
 <!--    Hết phần nội dung-->
-    <footer class="section footer">
-        <div class="container">
-            <div class="contact">
-                <ul>
-                    <li>Dasmoto's Arts & Crafts</li>
-                    <li>Số 8 Tôn Thất Thuyết</li>
-                    <li>Liên hệ:</li>
-                    <li><a href="#"><i class="fa-solid fa-phone"></i>090.999.9999</a></li>
-                    <li><a href="#"><i class="fa-solid fa-envelope"></i>DasmotoArtCraft@gmail.com</a></li>
-                </ul>
+<footer class="section footer">
+    <div class="container">
+        <div class="contact">
+            <ul>
+                <li>Dasmoto's Arts & Crafts</li>
+                <li>Số 8 Tôn Thất Thuyết</li>
+                <li>Liên hệ:</li>
+                <li><a href="#"><i class="fa-solid fa-phone"></i>090.999.9999</a></li>
+                <li><a href="#"><i class="fa-solid fa-envelope"></i>DasmotoArtCraft@gmail.com</a></li>
+            </ul>
 
-            </div>
-            <div class="socialmedia">
-                <ul>
-                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-
-                </ul>
-
-            </div>
         </div>
-    </footer>
+        <div class="socialmedia">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+
+            </ul>
+
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="libs/bootstrap5.2/js/bootstrap.js"></script>
+<script type="text/javascript" src="libs/bootstrap5.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="libs/bootstrap5.2/js/bootstrap.bundle.js"></script>
+
+
 
 </body>
 </html>

@@ -9,18 +9,19 @@
     <link rel="stylesheet" href="css/layout.css"/>
     <link rel="stylesheet" href="libs/fontawesome/css/all.css"/>
     <link rel="stylesheet" href="css/product.css"/>
+    <link rel="stylesheet" href="libs/bootstrap5.2/css/bootstrap.css">
 </head>
 <body>
 <header class="section header">
     <div class="container">
         <div class="logo">
-            <a href="#"><img src="img/logo2.jpeg" alt="logo"/></a>
+            <a href="#"><img src="img/logo.png" alt="logo"/></a>
         </div>
         <div class="top-page">
 
             <form method="get" action="#">
-                <input type="text" placeholder="Search.."/>
-                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <label><input type="text" placeholder=" Search.."/></label>
+                <button type="button">SEARCH</button>
             </form>
         </div>
 
@@ -29,13 +30,32 @@
 <nav class="section navigation">
     <div class="container">
         <div class="navigator">
-            <ul>
-                <li><a href="#">Trang chủ</a></li>
-                <li><a href="#">Danh mục</a></li>
-                <li><a href="#">Sản phẩm</a></li>
-                <li><a href="#">Chúng tôi</a></li>
-            </ul>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Trang Chủ</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
 
+                            <div class="btn-group">
+                                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Danh mục
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">On sale</a></li>
+                                    <li><a class="dropdown-item" href="#">Earrings</a></li>
+                                    <li><a class="dropdown-item" href="#">Pendants</a></li>
+                                    <li><a class="dropdown-item" href="#">Bracelets</a></li>
+                                </ul>
+                            </div>
+                            <a class="nav-link" href="#">Sản phẩm</a>
+                            <a class="nav-link" href="#">Chúng tôi</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
         <div class="cart">
             <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
@@ -73,6 +93,12 @@
         </div>
     </div>
 </footer>
+
+<script type="text/javascript" src="libs/bootstrap5.2/js/bootstrap.js"></script>
+<script type="text/javascript" src="libs/bootstrap5.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="libs/bootstrap5.2/js/bootstrap.bundle.js"></script>
+
+
 
 
 </body>
