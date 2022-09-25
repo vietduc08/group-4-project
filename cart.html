@@ -64,36 +64,58 @@
 </nav>
 <!--    Phần nội dung-->
 <section class="section main">
-    <div class="container boxcenter">
+ <div class="row">
+        <h3> Thong tin nhan hang</h3>
+     <div class="form-floating">
+         <input type="text" class="form-control" id="hoten" placeholder="Nguyễn Văn A">
+         <label for="hoten">Họ và tên</label>
+     </div>
+     <div class="form-floating">
+         <input type="text" class="form-control" id="diachi" placeholder="Số....">
+         <label for="diachi">Địa chỉ</label>
+     </div>
+        <div class="form-floating">
+            <input type="tel" class="form-control" id="dienthoai" placeholder="09xxxxxxx">
+            <label for="dienthoai">Điện thoại</label>
+        </div>
+     <div class="form-floating">
+         <input type="email" class="form-control" id="email" placeholder="name@example.com">
+         <label for="email">Email</label>
+     </div>
+ </div>
 
-        <table class="col-12" >
-            <thead>
+    <div class="row">
+        <h1>Giỏ Hàng</h1>
+        <table>
             <tr>
-                <th>Mã sản phẩm</th>
+                <th>STT</th>
                 <th>Hình</th>
-                <th>Tên</th>
+                <th>Tên sản phẩm</th>
                 <th>Đơn giá</th>
                 <th>Số lượng</th>
-                <th>Thành tiền</th>
-                <th>Xóa sản phẩm</th>
+                <th>Thành tiền ($)</th>
             </tr>
-            </thead>
-            <tbody id="dssp">
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><input type="button" value="Xóa"></td>
-                </tr>
-            </tbody>
+            <tr>
+                <td>1</td>
+                <td><img src=" " alt=""></td>
+                <td>Đồng hồ</td>
+                <td>10</td>
+                <td>1</td>
+                <td>
+                    <div>10</div>
+                </td>
+            </tr>
             <tr>
                 <th colspan="5">Tổng đơn hàng</th>
-                <th colspan="2">00000 đ</th>
+                <th>
+                    <div>10</div>
+                </th>
+
             </tr>
         </table>
+    </div>
+    <div class="row mb">
+        <button class="dongy">ĐỒNG Ý ĐẶT HÀNG</button>
     </div>
 </section>
 <!--    Hết phần nội dung-->
