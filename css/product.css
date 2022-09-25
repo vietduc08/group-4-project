@@ -1,12 +1,12 @@
 .content{
-    width: calc(40% - 30px);
+    width: calc(40% - 60px);
     float:left;
     text-align: center;
     border: 2px solid green;
     margin: 60px 15px;
 }
 .sidebar{
-    width: calc(60% - 30px);
+    width: calc(60% - 60px);
     float:left;
     text-align: left;
     margin: 60px 15px;

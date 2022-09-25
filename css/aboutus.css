@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #777;
+    text-align: justify;
+}
+
+h1,
+.subtitle {
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+ul {
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+.content {
+    position: relative;
+}
+
+.page_header {
+    color: rgb(255, 255, 255);
+    background-image: url("/img/aboutus/anhaboutus.jpg");
+    background-size: contain;
+    height: 330px;
+    text-align: center;
+    display: table;
+    width: 100%;
+}
+
+.title_wrapper {
+    background: rgba(0, 0, 0, 0.5);
+    display: table-cell;
+    vertical-align: middle;
+}
+
+p {
+    color: #777;
+    font-size: 18px;
+    font-style: normal;
+    margin: 25px 0 0 0;
+}
+
+.box_1 {
+    padding-top: 105px !important;
+    padding-bottom: 90px !important;
+    background-color: #ffffff !important;
+}
+
+.box_2 {
+    padding-top: 70px !important;
+    padding-bottom: 70px !important;
+    background-color: #ffffff !important;
+}
+
+.my_text {
+    padding-right: 17% !important;
+    padding-left: 17% !important;
+}
+
+.section-title {
+    color: darkslategrey;
+    font-size: 30px;
+    margin-bottom: 5px;
+    border-bottom: 5px solid lightseagreen;
+    display: inline;
+    padding-bottom: 5px;
+}
+
+.section-title-holder {
+    text-align: center;
+}
+
+.content > strong {
+    color: darkslategrey;
+}
+
