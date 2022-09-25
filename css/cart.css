@@ -1,4 +1,6 @@
-
+*{
+    font-size: 20px;
+}
 
 .thongtinkhachhang{
     height: 500px;
@@ -12,8 +14,29 @@
     padding: 20px;
 
 }
-input{
-    width: 400px;
+.aaa{
+    width: 50%;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: solid 3px darkgrey;
+}
+table, th, td{
+    border: 1px #ccc solid;
+}
+.dongy {
+    margin-left: 70px;
+    width: 300px;
+    border: 1px #F90 solid;
+    background-image: linear-gradient(#F90, #F60);
+    padding: 10px;
+    border-radius: 5px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.dongy:hover {
+    background-image: linear-gradient(#f1c40f, #f39c12);
 }
 
 
