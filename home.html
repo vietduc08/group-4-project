@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="libs/fontawesome/css/all.css"/>
     <link rel="stylesheet" href="css/home.css"/>
     <link rel="stylesheet" href="libs/bootstrap5.2/css/bootstrap.css">
+    <link rel="stylesheet" href="libs/owlcarousel2.3.4/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="libs/owlcarousel2.3.4/dist/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="libs/owlcarousel2.3.4/dist/assets/owl.theme.green.css">
 </head>
 <body>
 <header class="section header">
@@ -63,9 +66,33 @@
     </div>
 </nav>
 <!--    Phần nội dung-->
+
     <section class="section main">
         <div class="container">
-            <div>Nội dung ở đây</div>
+            <h1>SẢN PHẨM NỔI BẬT</h1>
+            <div class="owl-carousel owl-theme">
+                <div class="item"><a href="#"><img src="img/khuyentai/khuyentai1.jpg"/></a></div>
+                <div class="item"><a href="#"><img src="img/khuyentai/khuyentai2.jpg"/></a></div>
+                <div class="item"><a href="#"><img src="img/khuyentai/khuyentai3.jpg"/></a></div>
+                <div class="item"><a href="#"><img src="img/khuyentai/khuyentai4.jpg"/></a></div>
+                <div class="item"><a href="#"><img src="img/khuyentai/khuyentai5.jpg"/></a></div>
+                <div class="item"><a href="#"><img src="img/khuyentai/khuyentai6.jpg"/></a></div>
+            </div>
+            <h2>DANH MỤC SẢN PHẨM</h2>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 <!--    Hết phần nội dung-->
@@ -94,6 +121,42 @@
 <script type="text/javascript" src="libs/bootstrap5.2/js/bootstrap.js"></script>
 <script type="text/javascript" src="libs/bootstrap5.2/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="libs/bootstrap5.2/js/bootstrap.bundle.js"></script>
+<script type="text/javascript" src="libs/jquery/jquery3.6.1.js"></script>
+<script type="text/javascript" src="libs/owlcarousel2.3.4/dist/owl.carousel.js"></script>
+<script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        autoplay:true,
+        autoplayTimeout:100,
+        autoplayHoverPause:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    })
+
+</script>
+<script type="text/javascript">
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        items:4,
+        loop:true,
+        margin:10,
+        autoplay:true,
+        autoplayTimeout:1000,
+        autoplayHoverPause:true
+    });
+
+</script>
 
 
 
