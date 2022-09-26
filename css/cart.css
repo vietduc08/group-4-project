@@ -1,7 +1,9 @@
 *{
     font-size: 20px;
 }
-
+main{
+    margin: 0 auto;
+}
 .thongtinkhachhang{
     height: 500px;
 
@@ -15,14 +17,17 @@
 
 }
 .aaa{
-    width: 50%;
+    width: 60%;
     margin-left: 50px;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 20px;
-    border: solid 3px darkgrey;
+
 }
 table, th, td{
     border: 1px #ccc solid;
+}
+.giohang{
+    margin: 10px;
 }
 .dongy {
     margin-left: 70px;
