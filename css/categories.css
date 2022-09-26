@@ -1,0 +1,40 @@
+.content {
+    width: 25%;
+    border: 1px solid green;
+    text-align: center;
+    margin-top: 100px;
+    float: left;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.content img {
+    background-color: #2200ff;
+    height: 250px;
+    padding: 15px 10px 15px 20px; /* tạo 1 khoảng cách đi từ border đi vào nội dung */
+    /*
+    padding-top:
+    padding-right:
+    padding-bottom:
+    padding-left:
+     */
+    box-sizing: border-box;
+    border-radius: 50px; /* cắt góc tạo đường cong cho khung */
+    transition: 4s all; /* làm cho sự dịch chuyển của các hiệu ứng chậm hơn */
+
+}
+img {
+    max-width:100%;
+    /*
+    padding-top:
+    padding-right:
+    padding-bottom:
+    padding-left:
+     */
+    box-sizing: border-box;
+    border-radius: 50px; /* cắt góc tạo đường cong cho khung */
+    transition: 4s all; /* làm cho sự dịch chuyển của các hiệu ứng chậm hơn */
+}
+
+.content a{
+    text-decoration: none;
+}
