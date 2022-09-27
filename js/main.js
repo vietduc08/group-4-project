@@ -100,8 +100,9 @@ function addItemToCart(title, price, img) {
   <div class="cart-item cart-column">
       <img class="cart-item-image" src="${img}" width="100" height="100" alt="#">
       <span class="cart-item-title">${title}</span>
-      <span class="cart-price cart-column">${price}</span>
+          
   </div>
+      <span class="cart-price cart-column">${price}</span>
   <div class="cart-quantity cart-column">
       <input class="cart-quantity-input" type="number" value="1">
       <button class="btn btn-danger" type="button">Xóa</button>

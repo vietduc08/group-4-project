@@ -6,6 +6,7 @@
     border: 1px solid green;
     border-radius: 10px;
     margin:10px;
+    height:420px;
 }
 .text-center{
     padding:20px;
@@ -16,7 +17,7 @@
 }
 .main h6{
     font-size:20px;
-    color: rgba(0, 0, 0, 0.73);
+    color: rgba(189, 6, 6, 0.73);
 }
 .main button{
     font-size: 20px;
