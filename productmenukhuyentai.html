@@ -99,10 +99,39 @@
                 </div>
             </div>
         </div>
+<!--CART-->
+        <button class="cart" id="cart"><i class="fa-solid fa-cart-plus"></i></button>
+        <div id="myModal" class="modal">
+            <div class="modal-content" style="width:75%">
+                <div class="modal-header">
+                    <h5 class="modal-title">Giỏ Hàng</h5>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
 
-        <div class="cart">
-            <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                    <div class="cart-row">
+                        <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                        <span class="cart-price cart-header cart-column">Giá</span>
+                        <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                    </div>
+                    <div class="cart-items">
+
+
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">0$</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                    <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                </div>
+            </div>
         </div>
+<!--        END CART-->
 
     </div>
 </nav>
@@ -114,74 +143,31 @@
                         <h2>KHUYÊN TAI</h2>
             </div>
             <div class="product">
-                <a href="#"><img src="img/khuyentai/khuyentai1.jpg" alt="#"/>
-                    <h1>Product Name</h1>
-                       <h6>Price</h6>
-                       <button type="button">ADD TO CART</button>
-                       </a>
+                      <a href="https://dasmotoartandcraft-4.herokuapp.com/khuyentai1.html"><img src="img/khuyentai/khuyentai1.jpg" alt="#" class="img-prd"/>
+                      <h1 class="content-product-h3">Superior Buffalo Horn Earrings</h1>
+                      </a>
+                       <h6 class="price">
+                           <span class="money">28$</span>
+                       </h6>
+                       <button type="button" class="btn btn-cart">ADD TO CART</button>
             </div>
             <div class="product">
-                <a href="#"><img src="img/khuyentai/khuyentai2.jpg" alt="#"/>
-                    <h1>Product Name</h1>
-                    <h6>Price</h6>
-                    <button type="button">ADD TO CART</button>
+                <a href="https://dasmotoartandcraft-4.herokuapp.com/khuyentai2.html"><img src="img/khuyentai/khuyentai2.jpg" alt="#" class="img-prd"/>
+                    <h1 class="content-product-h3">Superior Buffalo Horn 123</h1>
                 </a>
+                <h6 class="price">
+                    <span class="money">30$</span>
+                </h6>
+                <button type="button" class="btn btn-cart">ADD TO CART</button>
             </div>
             <div class="product">
-                <a href="#"><img src="img/khuyentai/khuyentai3.jpg" alt="#"/>
-                    <h1>Product Name</h1>
-                    <h6>Price</h6>
-                    <button type="button">ADD TO CART</button>
+                <a href="https://dasmotoartandcraft-4.herokuapp.com/khuyentai3.html"><img src="img/khuyentai/khuyentai3.jpg" alt="#" class="img-prd"/>
+                    <h1 class="content-product-h3">Superior Horn Earrings 345</h1>
                 </a>
-            </div>
-            <div class="product">
-                <a href="#"><img src="img/khuyentai/khuyentai4.jpg" alt="#"/>
-                    <h1>Product Name</h1>
-                    <h6>Price</h6>
-                    <button type="button">ADD TO CART</button>
-                </a>
-            </div>
-            <div class="product">
-                <a href="#"><img src="img/khuyentai/khuyentai5.jpg" alt="#"/>
-                    <h1>Product Name</h1>
-                    <h6>Price</h6>
-                    <button type="button">ADD TO CART</button>
-                </a>
-            </div>
-            <div class="product">
-                <a href="#"><img src="img/khuyentai/khuyentai6.jpg" alt="#"/>
-                    <h1>Product Name</h1>
-                    <h6>Price</h6>
-                    <button type="button">ADD TO CART</button>
-                </a>
-            </div>
-            <div class="product">
-                <a href="#"><img src="img/khuyentai/khuyentai7.jpg" alt="#"/>
-                    <h1>Product Name</h1>
-                    <h6>Price</h6>
-                    <button type="button">ADD TO CART</button>
-                </a>
-            </div>
-            <div class="product">
-                <a href="#"><img src="img/khuyentai/khuyentai8.jpg" alt="#"/>
-                    <h1>Product Name</h1>
-                    <h6>Price</h6>
-                    <button type="button">ADD TO CART</button>
-                </a>
-            </div>
-            <div class="product">
-                <a href="#"><img src="img/khuyentai/khuyentai9.jpg" alt="#"/>
-                    <h1>Product Name</h1>
-                    <h6>Price</h6>
-                    <button type="button">ADD TO CART</button>
-                </a>
-            </div>
-            <div class="product">
-                <a href="#"><img src="img/khuyentai/khuyentai10.jpg" alt="#"/>
-                    <h1>Product Name</h1>
-                    <h6>Price</h6>
-                    <button type="button">ADD TO CART</button>
-                </a>
+                <h6 class="price">
+                    <span class="money">40$</span>
+                </h6>
+                <button type="button" class="btn btn-cart">ADD TO CART</button>
             </div>
 
 
@@ -230,7 +216,7 @@
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?AIzaSyA66KwUrjxcFG5u0exynlJ45CrbrNe3hEc&callback=initMap">
 </script>
-
+<script type="text/javascript" src="js/main.js"></script>
 
 
 </body>
