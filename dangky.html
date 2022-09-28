@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/dangky.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/layout.css"/>
+  <link rel="stylesheet" href="libs/fontawesome/css/all.css"/>
+  <link rel="stylesheet" href="css/product.css"/>
+  <link rel="stylesheet" href="libs/bootstrap5.2/css/bootstrap.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<header class="section header">
+  <div class="container">
+    <div class="logo">
+      <a href="https://dasmotoartandcraft-4.herokuapp.com/home.html#"><img src="img/logo.png" alt="logo"/></a>
+    </div>
+    <div class="top-page">
+
+      <form method="get" action="#">
+        <label><input type="text" placeholder=" Search.."/></label>
+        <button type="button">SEARCH</button>
+      </form>
+    </div>
+
+  </div>
+</header>
+<nav class="section navigation">
+  <div class="container">
+    <div class="navigator">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://dasmotoartandcraft-4.herokuapp.com/home.html#">Trang Chủ</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+
+              <div class="btn-group">
+                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Danh mục sản phẩm
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://dasmotoartandcraft-4.herokuapp.com/productmenukhuyentai.html#">KHUYÊN TAI</a></li>
+                  <li><a class="dropdown-item" href="https://dasmotoartandcraft-4.herokuapp.com/productmenuvongco.html#">VÒNG CỔ</a></li>
+                  <li><a class="dropdown-item" href="https://dasmotoartandcraft-4.herokuapp.com/productmenuvongtay.html#">VÒNG TAY</a></li>
+                  <li><a class="dropdown-item" href="#">NHẪN (Coming soon)</a></li>
+                  <li><a class="dropdown-item" href="#">PHỤ KIỆN (Coming soon)</a></li>
+                </ul>
+              </div>
+              <a class="nav-link" href="https://dasmotoartandcraft-4.herokuapp.com/productmenu.html#">Sản phẩm</a>
+              <a class="nav-link" href="https://dasmotoartandcraft-4.herokuapp.com/categories.html#">Categories</a>
+              <a class="nav-link" href="https://dasmotoartandcraft-4.herokuapp.com/aboutus.html#">Về Chúng Tôi</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="login">
+      <!-- Button trigger modal -->
+      <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+        <i class="fa-regular fa-user"></i>
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5>Đăng nhập</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form method="get" action="#">
+                <label><i class="fa-regular fa-user"></i></label>
+                <label><input type="text" name="username" placeholder="Tên đăng nhập/Số điện thoại" required/></label>
+                <br/>
+                <br/>
+                <label><i class="fa-sharp fa-solid fa-unlock-keyhole"></i></label>
+                <label><input type="password" name="your_pwd2" placeholder="Mật khẩu" required/></label>
+                <br/>
+                <br/>
+                <button type="submit">Đăng nhập</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+              <button type="button" class="btn btn-primary">Đăng ký</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--CART-->
+    <button class="cart" id="cart"><i class="fa-solid fa-cart-plus"></i></button>
+    <div id="myModal" class="modal">
+      <div class="modal-content" style="width:75%">
+        <div class="modal-header">
+          <h5 class="modal-title">Giỏ Hàng</h5>
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+
+          <div class="cart-row">
+            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+            <span class="cart-price cart-header cart-column">Giá</span>
+            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+          </div>
+          <div class="cart-items">
+
+
+            <div class="cart-total">
+              <strong class="cart-total-title">Tổng Cộng:</strong>
+              <span class="cart-total-price">0$</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+          <button type="button" class="btn btn-primary order">Thanh Toán</button>
+        </div>
+      </div>
+    </div>
+    <!--        END CART-->
+
+  </div>
+</nav>
+
+<div class="all">
+<section class="section top-page">
+  <div class="container">
+
+
+  </div>
+</section>
+
+
+  <div  class="container">
+    <i class="fa-solid fa-registered"></i>
+    <h1>REGISTER</h1>
+  </div>
+</header>
+
+
+<section class="section main">
+  <div class="container">
+    <form method="get" action="#">
+      <label><i class="fa-regular fa-user"></i></label>
+      <label><input type="text" name="username" placeholder="Tên Đăng Nhập" required/></label>
+      <br/>
+      <br/>
+      <label><i class="fa-sharp fa-solid fa-unlock-keyhole"></i></label>
+      <label><input type="password" name="your_pwd1" placeholder="Mật Khẩu" required/></label>
+      <br/>
+      <br/>
+      <label><i class="fa-sharp fa-solid fa-unlock-keyhole"></i></label>
+      <label><input type="password" name="your_pwd2" placeholder="Xác Nhận Mật Khẩu" required/></label>
+      <br/>
+      <br/>
+      <i class="fa-regular fa-envelope"></i>
+      <input type="email" name="your_email" placeholder="Địa Chỉ E-Mail" required/>
+      <br/>
+      <br/>
+      <label class="box"><input type="checkbox" name="confirm" value="Yes"/> Tôi Đã Xem và Đồng Ý <a href="#">Các Điều Khoản</a></label>
+      <br/>
+      <br/>
+      <button type="submit">SIGN UP</button>
+      <br/>
+      <br/>
+      <label>Already a member? <a href="#"><b>Login here</b></a></label>
+
+    </form>
+
+  </div>
+</section>
+<footer class="section footer">
+  <div class="container">
+    <div class="contact">
+      <ul>
+        <li>Dasmoto's Arts & Crafts</li>
+        <li>Số 8 Tôn Thất Thuyết</li>
+        <li>Liên hệ:</li>
+        <li><a href="#"><i class="fa-solid fa-phone"></i>090.999.9999</a></li>
+        <li><a href="#"><i class="fa-solid fa-envelope"></i>DasmotoArtCraft@gmail.com</a></li>
+      </ul>
+    </div>
+    <section class="section map" id="map" style="height: 250px;width:500px;">
+
+    </section>
+    <div class="socialmedia">
+      <h3>Theo dõi chúng tôi</h3>
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+</footer>
+
+
+
+</div>
+</body>
+</html>

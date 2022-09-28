@@ -1,0 +1,38 @@
+.all{
+    background-color: rgb(255, 255, 255);
+}
+.header .container{
+    text-align: center;
+    font-size: 20px;
+}
+.header i{
+    font-size:50px;
+    padding:10px;
+
+
+}
+.main i{
+
+}
+i{
+    font-size:30px;
+
+    padding:10px;
+}
+.main .container{
+    padding-top:20px;
+    padding-bottom:20px;
+    text-align: center;
+    background-color: rgba(243, 242, 243, 0.92);
+}
+input{
+    font-size:40px;
+}
+.box{
+    font-size:25px;
+}
+button{
+    font-size:25px;
+    width:25%;
+    background-color:rgba(145, 37, 154, 0.56);
+}
