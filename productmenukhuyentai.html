@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Khuyên Tai</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -15,11 +15,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div id="content-wap">
+
 <header class="section header">
     <div class="container">
         <div class="logo">
-            <a href="#"><img src="img/logo.png" alt="logo"/></a>
+            <a href="https://dasmotoartandcraft-4.herokuapp.com/home.html#"><img src="img/logo.png" alt="logo"/></a>
         </div>
         <div class="top-page">
 
@@ -36,7 +36,7 @@
         <div class="navigator">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Trang Chủ</a>
+                    <a class="navbar-brand" href="https://dasmotoartandcraft-4.herokuapp.com/home.html#">Trang Chủ</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -48,15 +48,16 @@
                                     Danh mục sản phẩm
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">KHUYÊN TAI</a></li>
-                                    <li><a class="dropdown-item" href="#">VÒNG CỔ</a></li>
-                                    <li><a class="dropdown-item" href="#">VÒNG TAY</a></li>
-                                    <li><a class="dropdown-item" href="#">NHẪN</a></li>
-                                    <li><a class="dropdown-item" href="#">PHỤ KIỆN</a></li>
+                                    <li><a class="dropdown-item" href="https://dasmotoartandcraft-4.herokuapp.com/productmenukhuyentai.html#">KHUYÊN TAI</a></li>
+                                    <li><a class="dropdown-item" href="https://dasmotoartandcraft-4.herokuapp.com/productmenuvongco.html#">VÒNG CỔ</a></li>
+                                    <li><a class="dropdown-item" href="https://dasmotoartandcraft-4.herokuapp.com/productmenuvongtay.html#">VÒNG TAY</a></li>
+                                    <li><a class="dropdown-item" href="#">NHẪN (Coming soon)</a></li>
+                                    <li><a class="dropdown-item" href="#">PHỤ KIỆN (Coming soon)</a></li>
                                 </ul>
                             </div>
-                            <a class="nav-link" href="#">Sản phẩm</a>
-                            <a class="nav-link" href="#">Về Chúng Tôi</a>
+                            <a class="nav-link" href="https://dasmotoartandcraft-4.herokuapp.com/productmenu.html#">Sản phẩm</a>
+                            <a class="nav-link" href="https://dasmotoartandcraft-4.herokuapp.com/categories.html#">Categories</a>
+                            <a class="nav-link" href="https://dasmotoartandcraft-4.herokuapp.com/aboutus.html#">Về Chúng Tôi</a>
                         </div>
                     </div>
                 </div>
@@ -99,10 +100,39 @@
                 </div>
             </div>
         </div>
+<!--CART-->
+        <button class="cart" id="cart"><i class="fa-solid fa-cart-plus"></i></button>
+        <div id="myModal" class="modal">
+            <div class="modal-content" style="width:75%">
+                <div class="modal-header">
+                    <h5 class="modal-title">Giỏ Hàng</h5>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
 
-        <div class="cart">
-            <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                    <div class="cart-row">
+                        <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                        <span class="cart-price cart-header cart-column">Giá</span>
+                        <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                    </div>
+                    <div class="cart-items">
+
+
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">0$</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                    <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                </div>
+            </div>
         </div>
+<!--        END CART-->
 
     </div>
 </nav>
@@ -114,74 +144,94 @@
                         <h2>KHUYÊN TAI</h2>
             </div>
             <div class="product">
-                <a href="#"><img src="img/khuyentai/khuyentai1.jpg" alt="#"/>
-                    <h1>Product Name</h1>
-                       <h6>Price</h6>
-                       <button type="button">ADD TO CART</button>
-                       </a>
+                      <a href="https://dasmotoartandcraft-4.herokuapp.com/khuyentai1.html"><img src="img/khuyentai/khuyentai1.jpg" alt="#" class="img-prd"/>
+                      <h1 class="content-product-h3">Superior Buffalo Horn Earrings - JB583</h1>
+                      </a>
+                       <h6 class="price">
+                           <span class="money">28$</span>
+                       </h6>
+                       <button type="button" class="btn btn-cart glow-on-hover">ADD TO CART</button>
             </div>
             <div class="product">
-                <a href="#"><img src="img/khuyentai/khuyentai2.jpg" alt="#"/>
-                    <h1>Product Name</h1>
-                    <h6>Price</h6>
-                    <button type="button">ADD TO CART</button>
+                <a href="https://dasmotoartandcraft-4.herokuapp.com/khuyentai2.html"><img src="img/khuyentai/khuyentai2.jpg" alt="#" class="img-prd"/>
+                    <h1 class="content-product-h3">Earrings For Lover - JB683</h1>
                 </a>
+                <h6 class="price">
+                    <span class="money">30$</span>
+                </h6>
+                <button type="button" class="btn btn-cart glow-on-hover">ADD TO CART</button>
             </div>
             <div class="product">
-                <a href="#"><img src="img/khuyentai/khuyentai3.jpg" alt="#"/>
-                    <h1>Product Name</h1>
-                    <h6>Price</h6>
-                    <button type="button">ADD TO CART</button>
+                <a href="https://dasmotoartandcraft-4.herokuapp.com/khuyentai3.html"><img src="img/khuyentai/khuyentai3.jpg" alt="#" class="img-prd"/>
+                    <h1 class="content-product-h3">Water Buffalo Horn Earrings - JB1583</h1>
                 </a>
+                <h6 class="price">
+                    <span class="money">28$</span>
+                </h6>
+                <button type="button" class="btn btn-cart glow-on-hover">ADD TO CART</button>
             </div>
             <div class="product">
-                <a href="#"><img src="img/khuyentai/khuyentai4.jpg" alt="#"/>
-                    <h1>Product Name</h1>
-                    <h6>Price</h6>
-                    <button type="button">ADD TO CART</button>
+                <a href="https://dasmotoartandcraft-4.herokuapp.com/khuyentai4.html"><img src="img/khuyentai/khuyentai4.jpg" alt="#" class="img-prd"/>
+                    <h1 class="content-product-h3">Earrings Of Dasmoto Jewelry - JB2256</h1>
                 </a>
+                <h6 class="price">
+                    <span class="money">32$</span>
+                </h6>
+                <button type="button" class="btn btn-cart glow-on-hover">ADD TO CART</button>
             </div>
             <div class="product">
-                <a href="#"><img src="img/khuyentai/khuyentai5.jpg" alt="#"/>
-                    <h1>Product Name</h1>
-                    <h6>Price</h6>
-                    <button type="button">ADD TO CART</button>
+                <a href="https://dasmotoartandcraft-4.herokuapp.com/khuyentai5.html"><img src="img/khuyentai/khuyentai5.jpg" alt="#" class="img-prd"/>
+                    <h1 class="content-product-h3">Earrings Collection For Summer - JB813</h1>
                 </a>
+                <h6 class="price">
+                    <span class="money">38$</span>
+                </h6>
+                <button type="button" class="btn btn-cart glow-on-hover">ADD TO CART</button>
             </div>
             <div class="product">
-                <a href="#"><img src="img/khuyentai/khuyentai6.jpg" alt="#"/>
-                    <h1>Product Name</h1>
-                    <h6>Price</h6>
-                    <button type="button">ADD TO CART</button>
+                <a href="https://dasmotoartandcraft-4.herokuapp.com/khuyentai6.html"><img src="img/khuyentai/khuyentai6.jpg" alt="#" class="img-prd"/>
+                    <h1 class="content-product-h3">Buffalo Horn Earrings - JB643</h1>
                 </a>
+                <h6 class="price">
+                    <span class="money">28$</span>
+                </h6>
+                <button type="button" class="btn btn-cart glow-on-hover">ADD TO CART</button>
             </div>
             <div class="product">
-                <a href="#"><img src="img/khuyentai/khuyentai7.jpg" alt="#"/>
-                    <h1>Product Name</h1>
-                    <h6>Price</h6>
-                    <button type="button">ADD TO CART</button>
+                <a href="https://dasmotoartandcraft-4.herokuapp.com/khuyentai7.html"><img src="img/khuyentai/khuyentai7.jpg" alt="#" class="img-prd"/>
+                    <h1 class="content-product-h3">First Earrings Collection - JB353</h1>
                 </a>
+                <h6 class="price">
+                    <span class="money">28$</span>
+                </h6>
+                <button type="button" class="btn btn-cart glow-on-hover">ADD TO CART</button>
             </div>
             <div class="product">
-                <a href="#"><img src="img/khuyentai/khuyentai8.jpg" alt="#"/>
-                    <h1>Product Name</h1>
-                    <h6>Price</h6>
-                    <button type="button">ADD TO CART</button>
+                <a href="https://dasmotoartandcraft-4.herokuapp.com/khuyentai8.html"><img src="img/khuyentai/khuyentai8.jpg" alt="#" class="img-prd"/>
+                    <h1 class="content-product-h3">Earrings Jewelry- JB113</h1>
                 </a>
+                <h6 class="price">
+                    <span class="money">28$</span>
+                </h6>
+                <button type="button" class="btn btn-cart glow-on-hover">ADD TO CART</button>
             </div>
             <div class="product">
-                <a href="#"><img src="img/khuyentai/khuyentai9.jpg" alt="#"/>
-                    <h1>Product Name</h1>
-                    <h6>Price</h6>
-                    <button type="button">ADD TO CART</button>
+                <a href="https://dasmotoartandcraft-4.herokuapp.com/khuyentai9.html"><img src="img/khuyentai/khuyentai9.jpg" alt="#" class="img-prd"/>
+                    <h1 class="content-product-h3">Earrings Of Dasmoto - JB983</h1>
                 </a>
+                <h6 class="price">
+                    <span class="money">41$</span>
+                </h6>
+                <button type="button" class="btn btn-cart glow-on-hover">ADD TO CART</button>
             </div>
             <div class="product">
-                <a href="#"><img src="img/khuyentai/khuyentai10.jpg" alt="#"/>
-                    <h1>Product Name</h1>
-                    <h6>Price</h6>
-                    <button type="button">ADD TO CART</button>
+                <a href="https://dasmotoartandcraft-4.herokuapp.com/khuyentai10.html"><img src="img/khuyentai/khuyentai10.jpg" alt="#" class="img-prd"/>
+                    <h1 class="content-product-h3">DASMOTO Collection With Earrings Jewelry - JB979</h1>
                 </a>
+                <h6 class="price">
+                    <span class="money">28$</span>
+                </h6>
+                <button type="button" class="btn btn-cart glow-on-hover">ADD TO CART</button>
             </div>
 
 
@@ -230,7 +280,7 @@
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?AIzaSyA66KwUrjxcFG5u0exynlJ45CrbrNe3hEc&callback=initMap">
 </script>
-
+<script type="text/javascript" src="js/main.js"></script>
 
 
 </body>

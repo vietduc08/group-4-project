@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Vòng Cổ</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -15,97 +15,126 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div id="content-wap">
-    <header class="section header">
-        <div class="container">
-            <div class="logo">
-                <a href="#"><img src="img/logo.png" alt="logo"/></a>
-            </div>
-            <div class="top-page">
-
-                <form method="get" action="#">
-                    <label><input type="text" placeholder=" Search.."/></label>
-                    <button type="button">SEARCH</button>
-                </form>
-            </div>
-
+<header class="section header">
+    <div class="container">
+        <div class="logo">
+            <a href="https://dasmotoartandcraft-4.herokuapp.com/home.html#"><img src="img/logo.png" alt="logo"/></a>
         </div>
-    </header>
-    <nav class="section navigation">
-        <div class="container">
-            <div class="navigator">
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">Trang Chủ</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
+        <div class="top-page">
 
-                                <div class="btn-group">
-                                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Danh mục sản phẩm
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">KHUYÊN TAI</a></li>
-                                        <li><a class="dropdown-item" href="#">VÒNG CỔ</a></li>
-                                        <li><a class="dropdown-item" href="#">VÒNG TAY</a></li>
-                                        <li><a class="dropdown-item" href="#">NHẪN</a></li>
-                                        <li><a class="dropdown-item" href="#">PHỤ KIỆN</a></li>
-                                    </ul>
-                                </div>
-                                <a class="nav-link" href="#">Sản phẩm</a>
-                                <a class="nav-link" href="#">Về Chúng Tôi</a>
+            <form method="get" action="#">
+                <label><input type="text" placeholder=" Search.."/></label>
+                <button type="button">SEARCH</button>
+            </form>
+        </div>
+
+    </div>
+</header>
+<nav class="section navigation">
+    <div class="container">
+        <div class="navigator">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="https://dasmotoartandcraft-4.herokuapp.com/home.html#">Trang Chủ</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+
+                            <div class="btn-group">
+                                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Danh mục sản phẩm
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://dasmotoartandcraft-4.herokuapp.com/productmenukhuyentai.html#">KHUYÊN TAI</a></li>
+                                    <li><a class="dropdown-item" href="https://dasmotoartandcraft-4.herokuapp.com/productmenuvongco.html#">VÒNG CỔ</a></li>
+                                    <li><a class="dropdown-item" href="https://dasmotoartandcraft-4.herokuapp.com/productmenuvongtay.html#">VÒNG TAY</a></li>
+                                    <li><a class="dropdown-item" href="#">NHẪN (Coming soon)</a></li>
+                                    <li><a class="dropdown-item" href="#">PHỤ KIỆN (Coming soon)</a></li>
+                                </ul>
                             </div>
+                            <a class="nav-link" href="https://dasmotoartandcraft-4.herokuapp.com/productmenu.html#">Sản phẩm</a>
+                            <a class="nav-link" href="https://dasmotoartandcraft-4.herokuapp.com/categories.html#">Categories</a>
+                            <a class="nav-link" href="https://dasmotoartandcraft-4.herokuapp.com/aboutus.html#">Về Chúng Tôi</a>
                         </div>
                     </div>
-                </nav>
-            </div>
-            <div class="login">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
-                    <i class="fa-regular fa-user"></i>
-                </button>
+                </div>
+            </nav>
+        </div>
+        <div class="login">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                <i class="fa-regular fa-user"></i>
+            </button>
 
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5>Đăng nhập</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <form method="get" action="#">
-                                    <label><i class="fa-regular fa-user"></i></label>
-                                    <label><input type="text" name="username" placeholder="Tên đăng nhập/Số điện thoại" required/></label>
-                                    <br/>
-                                    <br/>
-                                    <label><i class="fa-sharp fa-solid fa-unlock-keyhole"></i></label>
-                                    <label><input type="password" name="your_pwd2" placeholder="Mật khẩu" required/></label>
-                                    <br/>
-                                    <br/>
-                                    <button type="submit">Đăng nhập</button>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
-                                <button type="button" class="btn btn-primary">Đăng ký</button>
-                            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>Đăng nhập</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form method="get" action="#">
+                                <label><i class="fa-regular fa-user"></i></label>
+                                <label><input type="text" name="username" placeholder="Tên đăng nhập/Số điện thoại" required/></label>
+                                <br/>
+                                <br/>
+                                <label><i class="fa-sharp fa-solid fa-unlock-keyhole"></i></label>
+                                <label><input type="password" name="your_pwd2" placeholder="Mật khẩu" required/></label>
+                                <br/>
+                                <br/>
+                                <button type="submit">Đăng nhập</button>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                            <button type="button" class="btn btn-primary">Đăng ký</button>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="cart">
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            </div>
-
         </div>
-    </nav>
+        <!--CART-->
+        <button class="cart" id="cart"><i class="fa-solid fa-cart-plus"></i></button>
+        <div id="myModal" class="modal">
+            <div class="modal-content" style="width:75%">
+                <div class="modal-header">
+                    <h5 class="modal-title">Giỏ Hàng</h5>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+
+                    <div class="cart-row">
+                        <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                        <span class="cart-price cart-header cart-column">Giá</span>
+                        <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                    </div>
+                    <div class="cart-items">
+
+
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">0$</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                    <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                </div>
+            </div>
+        </div>
+        <!--        END CART-->
+
+    </div>
+</nav>
     <!--    Phần nội dung-->
     <section class="section main">
         <div class="container">
@@ -114,61 +143,96 @@
                     <h2>VÒNG CỔ</h2>
                 </div>
                 <div class="product">
-                    <a href="#"><img src="img/vongco/vongco1-1.jpg" alt="#"/>
-                        <h1>Product Name</h1>
-                        <h6>Price</h6>
-                        <button type="button">ADD TO CART</button>
+                    <a href="https://dasmotoartandcraft-4.herokuapp.com/vongco1.html"><img src="img/vongco/vongco1-1.jpg" alt="#" class="img-prd"/>
+                        <h1 class="content-product-h3">Superior Buffalo Horn Necklace - JN224</h1>
                     </a>
+                    <h6 class="price">
+                        <span class="money">32$</span>
+                    </h6>
+                    <button type="button" class="btn btn-cart glow-on-hover">ADD TO CART</button>
                 </div>
                 <div class="product">
-                    <a href="#"><img src="img/vongco/vongco2-1.jpg" alt="#"/>
-                        <h1>Product Name</h1>
-                        <h6>Price</h6>
-                        <button type="button">ADD TO CART</button>
+                    <a href="https://dasmotoartandcraft-4.herokuapp.com/vongco2.html"><img src="img/vongco/vongco1-2.jpg" alt="#" class="img-prd"/>
+                        <h1 class="content-product-h3">Necklace For Women - JN442</h1>
                     </a>
+                    <h6 class="price">
+                        <span class="money">33$</span>
+                    </h6>
+                    <button type="button" class="btn btn-cart glow-on-hover">ADD TO CART</button>
                 </div>
                 <div class="product">
-                    <a href="#"><img src="img/vongco/vongco3-1.jpg" alt="#"/>
-                        <h1>Product Name</h1>
-                        <h6>Price</h6>
-                        <button type="button">ADD TO CART</button>
+                    <a href="https://dasmotoartandcraft-4.herokuapp.com/vongco3.html"><img src="img/vongco/vongco2-1.jpg" alt="#" class="img-prd"/>
+                        <h1 class="content-product-h3">Water Buffalo Horn Necklace - JB554</h1>
                     </a>
+                    <h6 class="price">
+                        <span class="money">38$</span>
+                    </h6>
+                    <button type="button" class="btn btn-cart glow-on-hover">ADD TO CART</button>
                 </div>
                 <div class="product">
-                    <a href="#"><img src="img/vongco/vongco4.jpg" alt="#"/>
-                        <h1>Product Name</h1>
-                        <h6>Price</h6>
-                        <button type="button">ADD TO CART</button>
+                    <a href="https://dasmotoartandcraft-4.herokuapp.com/vongco4.html"><img src="img/vongco/vongco2-2.jpg" alt="#" class="img-prd"/>
+                        <h1 class="content-product-h3">Superior Buffalo Horn Necklace - JN345</h1>
                     </a>
+                    <h6 class="price">
+                        <span class="money">27$</span>
+                    </h6>
+                    <button type="button" class="btn btn-cart glow-on-hover">ADD TO CART</button>
                 </div>
                 <div class="product">
-                    <a href="#"><img src="img/vongco/vongco5.jpg" alt="#"/>
-                        <h1>Product Name</h1>
-                        <h6>Price</h6>
-                        <button type="button">ADD TO CART</button>
+                    <a href="https://dasmotoartandcraft-4.herokuapp.com/vongco5.html"><img src="img/vongco/vongco3-1.jpg" alt="#" class="img-prd"/>
+                        <h1 class="content-product-h3">New Necklace For New Day - JN667</h1>
                     </a>
+                    <h6 class="price">
+                        <span class="money">28$</span>
+                    </h6>
+                    <button type="button" class="btn btn-cart glow-on-hover">ADD TO CART</button>
                 </div>
                 <div class="product">
-                    <a href="#"><img src="img/vongco/vongco6.jpg" alt="#"/>
-                        <h1>Product Name</h1>
-                        <h6>Price</h6>
-                        <button type="button">ADD TO CART</button>
+                    <a href="https://dasmotoartandcraft-4.herokuapp.com/vongco6.html"><img src="img/vongco/vongco3-2.jpg" alt="#" class="img-prd"/>
+                        <h1 class="content-product-h3">Superior Buffalo Horn Necklace - JN21</h1>
                     </a>
+                    <h6 class="price">
+                        <span class="money">24$</span>
+                    </h6>
+                    <button type="button" class="btn btn-cart glow-on-hover">ADD TO CART</button>
                 </div>
                 <div class="product">
-                    <a href="#"><img src="img/vongco/vongco7.jpg" alt="#"/>
-                        <h1>Product Name</h1>
-                        <h6>Price</h6>
-                        <button type="button">ADD TO CART</button>
+                    <a href="https://dasmotoartandcraft-4.herokuapp.com/vongco7.html"><img src="img/vongco/vongco4.jpg" alt="#" class="img-prd"/>
+                        <h1 class="content-product-h3">Superior Buffalo Horn Necklace - JN775</h1>
                     </a>
+                    <h6 class="price">
+                        <span class="money">28$</span>
+                    </h6>
+                    <button type="button" class="btn btn-cart glow-on-hover">ADD TO CART</button>
                 </div>
                 <div class="product">
-                    <a href="#"><img src="img/vongco/vongco8.jpg" alt="#"/>
-                        <h1>Product Name</h1>
-                        <h6>Price</h6>
-                        <button type="button">ADD TO CART</button>
+                    <a href="https://dasmotoartandcraft-4.herokuapp.com/vongco8.html"><img src="img/vongco/vongco5.jpg" alt="#" class="img-prd"/>
+                        <h1 class="content-product-h3">New Necklace With New Work - JN008</h1>
                     </a>
+                    <h6 class="price">
+                        <span class="money">38$</span>
+                    </h6>
+                    <button type="button" class="btn btn-cart glow-on-hover">ADD TO CART</button>
                 </div>
+                <div class="product">
+                    <a href="https://dasmotoartandcraft-4.herokuapp.com/vongco9.html"><img src="img/vongco/vongco6.jpg" alt="#" class="img-prd"/>
+                        <h1 class="content-product-h3">Superior Buffalo Horn Necklace - JN583</h1>
+                    </a>
+                    <h6 class="price">
+                        <span class="money">28$</span>
+                    </h6>
+                    <button type="button" class="btn btn-cart glow-on-hover">ADD TO CART</button>
+                </div>
+                <div class="product">
+                    <a href="https://dasmotoartandcraft-4.herokuapp.com/vongco10.html"><img src="img/vongco/vongco7.jpg" alt="#" class="img-prd"/>
+                        <h1 class="content-product-h3">Dasmoto'Necklace - JN321</h1>
+                    </a>
+                    <h6 class="price">
+                        <span class="money">28$</span>
+                    </h6>
+                    <button type="button" class="btn btn-cart glow-on-hover">ADD TO CART</button>
+                </div>
+
 
             </div>
         </div>
@@ -215,7 +279,7 @@
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?AIzaSyA66KwUrjxcFG5u0exynlJ45CrbrNe3hEc&callback=initMap">
 </script>
-
+<script type="text/javascript" src="js/main.js"></script>
 
 
 </body>
