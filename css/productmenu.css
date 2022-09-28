@@ -1,28 +1,36 @@
 .product{
     width: calc(25% - 20px);
     float:left;
-    padding:25px;
+    padding:10px;
     text-align: center;
-    border: 1px solid green;
-    border-radius: 10px;
+    box-shadow: 0 0 5px #a26b41;
+    border-radius: 6px;
     margin:10px;
-    height:420px;
+    height:380px;
 }
 .text-center{
     padding:20px;
 }
 .main h1{
-    font-size:25px;
+    font-size:16px;
     color: rgba(0, 0, 0, 0.73);
+    text-align:left;
 }
 .main h6{
+    width:25%;
+    float:left;
     font-size:20px;
-    color: rgba(189, 6, 6, 0.73);
+    color: rgba(5, 5, 5, 0.62);
+    margin-left:15px;
 }
 .main button{
+    color: #755c0b;
     font-size: 20px;
-    padding-right:5px;
-    width:100%;
+
+    width:50%;
+    float:right;
+    margin-right:20px;
+
 }
 .main button:hover{
     transform: scale(1.1);
@@ -31,65 +39,22 @@
     text-decoration: none;
 }
 .main img{
-    height: 150px;
-}
-.product .glow-on-hover {
-    width: 200px;
-    height: 50px;
-    border: none;
-    outline: none;
-    color: rgba(255, 183, 0, 0.8);
-    background: #111;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
-
+    height: 220px;
 }
 
-.product .glow-on-hover:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
-}
+.product img{
+    width:100%;
 
-.glow-on-hover:active {
-    color: rgba(255, 183, 0, 0.8);
 }
-
-.glow-on-hover:active:after {
-    background: transparent;
+.product h1{
+    height:50px;
 }
+.product{
 
-.glow-on-hover:hover:before {
-    opacity: 1;
 }
-
-.glow-on-hover:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
+.product h6{
+    font-size:20px;
 }
-
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+.product .btn i{
+    color: rgba(194, 145, 45, 0.76);
 }

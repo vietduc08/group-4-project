@@ -41,7 +41,8 @@ img{
 
 
 .top-page input{
-    font-size:20px
+    font-size:20px;
+    border-radius: 10px;
 
 }
 .top-page{
@@ -62,31 +63,36 @@ img{
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-
+    font-size: 15px;
+    border-radius: 10px;
 }
 .top-page i{
     color:rgba(255, 183, 0, 0.8);
 }
 .navigation{
-    border-top:2px solid #936c16;
+    border-top:2px solid rgba(155, 137, 111, 0.72);
     background-color: rgb(19, 19, 19);
 
 }
 .navigator{
     float:left;
-    padding:20px 0;
+    padding:0 0;
     color: rgba(255, 183, 0, 0.8);
 
 }
 .navigator a{
+    font-size:20px;
+    padding-top:25px;
     color: rgba(255, 183, 0, 0.8);
+    padding-left:15px;
 }
 .navbar-band{
     color: rgba(255, 183, 0, 0.8);
 }
 .navigator button{
+    font-size:20px;
     color: rgba(255, 183, 0, 0.8);
+    padding-top:25px;
 }
 .navigator li{
     float: left;
@@ -95,12 +101,14 @@ img{
 }
 .navigator li a{
     color: rgba(255, 183, 0, 0.8);
-    font-size:15px;
+    font-size:20px;
+
+
 }
 
 .login{
     float:right;
-    padding: 25px 70px;
+    padding: 25px 20px;
 }
 .cart i{
     font-size:25px;
@@ -117,7 +125,7 @@ img{
 }
 .footer{
     padding:20px 0;
-    border-top:2px solid #936c16;
+
     background-color: rgb(19, 19, 19);
 }
 .contact{
@@ -287,7 +295,6 @@ img{
     outline: none;
     cursor: pointer;
     background-color: rgb(19, 19, 19);
-    border: thin solid rgba(255, 183, 0, 0.8);
     float:right;
     padding: 30px 50px;
 }
@@ -345,4 +352,40 @@ img{
 }
 .product .btn{
     border:1px solid rgb(19, 19, 19);
+}
+.login .btn{
+    border-style:none;
+}
+.modal .modal-header h5{
+    text-align: center;
+    font-size:30px;
+    padding-left:80px;
+
+}
+.modal .modal-body input{
+    text-align: center;
+    font-size:30px;
+    border-radius:10px;
+}
+.modal .modal-body i{
+    text-align: center;
+    font-size:30px;
+    border-radius:10px;
+    margin-left:40px;
+}
+.modal .modal-body button{
+    text-align: center;
+    font-size:20px;
+    border-radius:10px;
+}
+.modal .modal-footer button{
+    text-align: center;
+    font-size:20px;
+    border-radius:10px;
+    padding:10px;
+}
+.modal .modal-body input::placeholder{
+    text-align: center;
+    font-size:20px;
+
 }
