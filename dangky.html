@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/dangky.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" >
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/layout.css"/>
   <link rel="stylesheet" href="libs/fontawesome/css/all.css"/>
-  <link rel="stylesheet" href="css/product.css"/>
+  <link rel="stylesheet" href="css/dangky.css"/>
+  <link rel="stylesheet" href="libs/bootstrap5.2/css/bootstrap.css">
+  <link rel="stylesheet" href="libs/nivoSlider/themes/default/default.css">
+  <link rel="stylesheet" href="libs/nivoSlider/nivo-slider.css">
   <link rel="stylesheet" href="libs/bootstrap5.2/css/bootstrap.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -135,83 +136,102 @@
       </div>
     </div>
     <!--        END CART-->
-
   </div>
 </nav>
-
-<div class="all">
-<section class="section top-page">
-  <div class="container">
-
-
-  </div>
-</section>
-
-
-  <div  class="container">
-    <i class="fa-solid fa-registered"></i>
-    <h1>REGISTER</h1>
-  </div>
-</header>
-
-
 <section class="section main">
   <div class="container">
-    <form method="get" action="#">
-      <label><i class="fa-regular fa-user"></i></label>
-      <label><input type="text" name="username" placeholder="Tên Đăng Nhập" required/></label>
-      <br/>
-      <br/>
-      <label><i class="fa-sharp fa-solid fa-unlock-keyhole"></i></label>
-      <label><input type="password" name="your_pwd1" placeholder="Mật Khẩu" required/></label>
-      <br/>
-      <br/>
-      <label><i class="fa-sharp fa-solid fa-unlock-keyhole"></i></label>
-      <label><input type="password" name="your_pwd2" placeholder="Xác Nhận Mật Khẩu" required/></label>
-      <br/>
-      <br/>
-      <i class="fa-regular fa-envelope"></i>
-      <input type="email" name="your_email" placeholder="Địa Chỉ E-Mail" required/>
-      <br/>
-      <br/>
-      <label class="box"><input type="checkbox" name="confirm" value="Yes"/> Tôi Đã Xem và Đồng Ý <a href="#">Các Điều Khoản</a></label>
-      <br/>
-      <br/>
-      <button type="submit">SIGN UP</button>
-      <br/>
-      <br/>
-      <label>Already a member? <a href="#"><b>Login here</b></a></label>
+    <div class="row">
+      <div class="col-3"></div>
+      <div class="col-6">
+        <h1>ĐĂNG KÝ</h1>
+        <div class="register">
+          <form method="get" action="#">
+            <label><i class="fa-regular fa-user"></i></label>
+            <label><input type="text" name="username" placeholder="Tên Đăng Nhập" required/></label>
+            <br/>
+            <br/>
+            <label><i class="fa-sharp fa-solid fa-unlock-keyhole"></i></label>
+            <label><input type="password" name="your_pwd1" placeholder="Mật Khẩu" required/></label>
+            <br/>
+            <br/>
+            <label><i class="fa-sharp fa-solid fa-unlock-keyhole"></i></label>
+            <label><input type="password" name="your_pwd2" placeholder="Xác Nhận Mật Khẩu" required/></label>
+            <br/>
+            <br/>
+            <i class="fa-regular fa-envelope"></i>
+            <input type="email" name="your_email" placeholder="Địa Chỉ E-Mail" required/>
+            <br/>
+            <br/>
+            <label class="box"><input type="checkbox" name="confirm" value="Yes"/> Tôi đã xem và đồng ý với <a href="#">Các Điều Khoản</a></label>
+            <br/>
+            <br/>
+            <button type="submit">Đăng ký</button>
+            <br/>
+            <br/>
+            <label class="signin">Đã là thành viên? <a href="#"><b>Đăng nhập tại đây</b></a></label>
+          </form>
+        </div>
+      </div>
+      <div class="col-3"></div>
+    </div>
 
-    </form>
 
   </div>
 </section>
 <footer class="section footer">
-  <div class="container">
-    <div class="contact">
-      <ul>
-        <li>Dasmoto's Arts & Crafts</li>
-        <li>Số 8 Tôn Thất Thuyết</li>
-        <li>Liên hệ:</li>
-        <li><a href="#"><i class="fa-solid fa-phone"></i>090.999.9999</a></li>
-        <li><a href="#"><i class="fa-solid fa-envelope"></i>DasmotoArtCraft@gmail.com</a></li>
-      </ul>
+    <div class="container">
+      <div class="contact">
+        <ul>
+          <li>Dasmoto's Arts & Crafts</li>
+          <li>Số 8 Tôn Thất Thuyết</li>
+          <li>Liên hệ:</li>
+          <li><a href="#"><i class="fa-solid fa-phone"></i>090.999.9999</a></li>
+          <li><a href="#"><i class="fa-solid fa-envelope"></i>DasmotoArtCraft@gmail.com</a></li>
+        </ul>
+      </div>
+      <section class="section map" id="map" style="height: 250px;width:500px;">
+
+      </section>
+      <div class="socialmedia">
+        <h3>Theo dõi chúng tôi</h3>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
     </div>
-    <section class="section map" id="map" style="height: 250px;width:500px;">
+  </footer>
 
-    </section>
-    <div class="socialmedia">
-      <h3>Theo dõi chúng tôi</h3>
-      <a href="#"><i class="fa-brands fa-facebook"></i></a>
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-      <a href="#"><i class="fa-brands fa-youtube"></i></a>
-    </div>
-  </div>
-</footer>
+  <script type="text/javascript" src="libs/bootstrap5.2/js/bootstrap.js"></script>
+  <script type="text/javascript" src="libs/bootstrap5.2/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="libs/bootstrap5.2/js/bootstrap.bundle.js"></script>
+  <script type="text/javascript" src="libs/jquery/jquery3.6.1.js"> </script>
+
+  <script type="text/javascript" src="libs/nivoSlider/jquery.nivo.slider.js"></script>
+  <script type="text/javascript" src="libs/nivoSlider/jquery.nivo.slider.pack.js"></script>
+  <script type="text/javascript">
+    $('#slider1').nivoSlider();
+  </script>
+  <script type="text/javascript">
+    $('#slider2').nivoSlider();
+  </script>
+  <script type="text/javascript">
+    $('#slider3').nivoSlider();
+  </script>
+  <script type="text/javascript">
+    let map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: 21.0286067, lng: 105.7825232 },
+        zoom: 18,
+      });
+    }
+    window.initMap = initMap;
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?AIzaSyA66KwUrjxcFG5u0exynlJ45CrbrNe3hEc&callback=initMap">
+  </script>
+  <script type="text/javascript" src="js/main.js"></script>
 
 
-
-</div>
 </body>
 </html>
