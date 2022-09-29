@@ -53,26 +53,26 @@ p {
 }
 
 .box_1 {
-    padding-top: 105px !important;
-    padding-bottom: 90px !important;
-    background-color: #ffffff !important;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    background-color: #ffffff;
 }
 
 .box_2 {
-    padding-top: 70px !important;
-    padding-bottom: 70px !important;
-    background-color: #ffffff !important;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #ffffff;
 }
 
 .my_text {
-    padding-right: 17% !important;
-    padding-left: 17% !important;
+    padding-right: 17%;
+    padding-left: 17%;
 }
 
 .section-title {
     color: darkslategrey;
     font-size: 30px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     border-bottom: 5px solid lightseagreen;
     display: inline;
     padding-bottom: 5px;
@@ -84,5 +84,11 @@ p {
 
 .content > strong {
     color: darkslategrey;
+}
+.wrapper{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: #ffffff;
+    font-weight: 400;
 }
 
