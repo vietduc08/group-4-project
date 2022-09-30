@@ -1,38 +1,57 @@
-.all{
-    background-color: rgb(255, 255, 255);
-}
-.header .container{
-    text-align: center;
-    font-size: 20px;
-}
-.header i{
-    font-size:50px;
+.main .col-6 h1{
+    text-align:center;
+    color: rgba(211, 147, 0, 0.76);
+    box-shadow: 0 0 2px currentColor;
     padding:10px;
-
-
+    border-radius:5px;
 }
-.main i{
-
-}
-i{
+.register i{
     font-size:30px;
-
+    margin-top:10px;
+    color: rgba(232, 171, 65, 0.92);
+    margin-left:86px;
+    background-color: rgba(0, 0, 0, 0.77);
     padding:10px;
 }
-.main .container{
-    padding-top:20px;
-    padding-bottom:20px;
-    text-align: center;
-    background-color: rgba(243, 242, 243, 0.92);
+.register input{
+    width:300px;
+    font-size:30px;
+    margin-top:10px;
+    color:rgba(159, 121, 43, 0.76);
+    border-radius:5px;
 }
-input{
-    font-size:40px;
+.register input::placeholder{
+    font-size:15px;
+    text-align:center;
+    color:black;
+    font-weight:500;
 }
-.box{
-    font-size:25px;
+.register .box{
+    font-size:15px;
+    margin-top:10px;
+    color:rgba(159, 121, 43, 0.76);
+    float:left;
 }
-button{
-    font-size:25px;
-    width:25%;
-    background-color:rgba(145, 37, 154, 0.56);
+.register .box input{
+    width:50px;
+    margin-left:82px;
+    font-size:20px;
+}
+.register button{
+    padding:10px;
+    background-color:black;
+    color:rgba(232, 171, 65, 0.92);
+    border-radius:5px;
+    margin-left:220px;
+}
+.register .signin{
+    font-size:15px;
+    margin-top:10px;
+    color:rgba(159, 121, 43, 0.76);
+    float:left;
+    margin-left:150px;
+}
+.col-6{
+    margin-top:30px;
+    margin-bottom:30px;
 }
