@@ -2,9 +2,13 @@
     width: calc(40% - 60px);
     float:left;
     text-align: center;
-    box-shadow: 0 0 5px brown;
+    box-shadow: 0 0 5px #a26b41;
     margin: 60px 15px;
 }
+
+
+
+
 .sidebar{
     width: calc(60% - 60px);
     float:left;
