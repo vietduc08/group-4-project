@@ -1,9 +1,10 @@
 *{
     font-size: 20px;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
-main{
-    margin: 0 auto;
-}
+
 .thongtinkhachhang{
     height: 500px;
 
@@ -16,24 +17,30 @@ main{
     padding: 20px;
 
 }
-.aaa{
-    width: 60%;
-    margin-left: 50px;
-    margin-top: 50px;
-    margin-bottom: 20px;
 
+
+#showcart{
+    position: fixed;
+    border-radius:10px;
+    background-color: #EEE;
+    padding: 10px;
+    border: 1px #CCC solid;
+}
+
+#mycart > tr > td >img{
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
 }
 table, th, td{
     border: 1px #ccc solid;
 }
-.giohang{
-    margin: 10px;
-}
+
 .dongy {
     margin-left: 70px;
     width: 300px;
     border: 1px #F90 solid;
-    background-image: linear-gradient(#F90, #F60);
+    background-image: linear-gradient(#d09206, #d09206);
     padding: 10px;
     border-radius: 5px;
     color: #FFF;
@@ -41,7 +48,21 @@ table, th, td{
 }
 
 .dongy:hover {
-    background-image: linear-gradient(#f1c40f, #f39c12);
+    background-image: linear-gradient(#d09206, #f39c12);
+}
+.row mb{
+    padding-bottom: 30px;
+}
+#thongtinnhanhang tr td {
+    text-align: left;
+    padding: 10px;
+}
+
+#thongtinnhanhang input {
+    width: 100%;
+    border: 1px #CCC solid;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 

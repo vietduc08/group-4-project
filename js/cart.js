@@ -1,123 +1,124 @@
-// Modal
-let modal = document.getElementById("myModal");
-let btn = document.getElementById("cart");
-let close = document.getElementsByClassName("close")[0];
-let close_footer = document.getElementsByClassName("close-footer")[0];
-let order = document.getElementsByClassName("order")[0];
-btn.onclick = function () {
-    modal.style.display = "block";
-}
-close.onclick = function () {
-    modal.style.display = "none";
-}
-close_footer.onclick = function () {
-    modal.style.display = "none";
-}
-order.onclick = function () {
-    alert("Cảm ơn bạn đã thanh toán đơn hàng")
-}
-window.onclick = function (event) {
-    if (event.target === modal) {
-        modal.style.display = "none";
+    document.getElementById("showcart").style.display="none";
+    let giohang = new Array();
+
+    function themvaogiohang(x) {
+        var product = x.parentElement.children;
+        var hinh = product[0].children[0].src;
+        var ten = product[1].innerText;
+        var gia = product[2].children[0].innerText;
+        var soluong = product[3].value;
+
+        var sp = new Array(hinh, ten, gia, soluong);
+
+        giohang.push(sp);
+//
+        console.log(giohang);
+        showcountsp();
+        //luu san pham vao session
+        sessionStorage.setItem("giohang",JSON.stringify(giohang));
     }
-}
-
-// Xóa SP
-let remove_cart = document.getElementsByClassName("btn-danger");
-let i;
-for (i = 0; i < remove_cart.length; i++) {
-    let button = remove_cart[i];
-    button.addEventListener("click", function () {
-        let button_remove = event.target;
-        button_remove.parentElement.parentElement.remove()
-    })
-}
-
-// Cập nhật sản phẩm
-// update cart
-function updatecart() {
-    let cart_item = document.getElementsByClassName("cart-items")[0];
-    let cart_rows = cart_item.getElementsByClassName("cart-row");
-    let total = 0;
-    for (let i = 0; i < cart_rows.length; i++) {
-        let cart_row = cart_rows[i];
-        let price_item = cart_row.getElementsByClassName("cart-price ")[0];
-        let quantity_item = cart_row.getElementsByClassName("cart-quantity-input")[0];
-        let price = parseFloat(price_item.innerText);// chuyển một chuổi string sang number để tính tổng tiền.
-        let quantity = quantity_item.value; // lấy giá trị trong thẻ input
-        total = total + (price * quantity)
+    function showcountsp() {
+        document.getElementById("countsp").innerHTML = giohang.length;
     }
-    document.getElementsByClassName("cart-total-price")[0].innerText = total + '$'
-    // Thay đổi text = total trong .cart-total-price. Chỉ có một .cart-total-price nên mình sử dụng [0].
-}
-
-// thay đổi số lượng sản phẩm
-let quantity_input = document.getElementsByClassName("cart-quantity-input");
-for (i = 0; i < quantity_input.length; i++) {
-    let input = quantity_input[i];
-    input.addEventListener("change", function (event) {
-        let input = event.target;
-        if (isNaN(input.value) || input.value <= 0) {
-            input.value = 1;
+    function showmycart(){
+        var ttgh="";
+        var tong=0;
+        for (let i =0;i<giohang.length;i++){
+            var tt=parseInt(giohang[i][2]) * parseInt(giohang[i][3]);
+            tong += tt;
+            ttgh+='<tr>\n' +
+                '                    <td>'+(i + 1)+'</td>\n' +
+                '                    <td><img src="'+giohang[i][0]+'" alt=""></td>\n' +
+                '                    <td>'+giohang[i][1]+'</td>\n' +
+                '                    <td>'+giohang[i][2]+'</td>\n' +
+                '                    <td>'+giohang[i][3]+'</td>\n' +
+                '                    <td>\n' +
+                '                        <div>'+ tt +'</div>\n' +
+                '                    </td>\n' +
+                '                </tr>';
         }
-        updatecart()
-    })
-}
+        ttgh += '<tr>\n' +
+            '                    <th colspan="5">Tổng đơn hàng</th>\n' +
+            '                    <th>\n' +
+            '                    <div>'+ tong + '</div>\n' +
+            '                    </th>\n' +
 
-// Thêm vào giỏ
-let add_cart = document.getElementsByClassName("btn-cart");
-for (i = 0; i < add_cart.length; i++) {
-    let add = add_cart[i];
-    add.addEventListener("click", function (event) {
-
-        let button = event.target;
-        let product = button.parentElement.parentElement;
-        let img = product.parentElement.getElementsByClassName("img-prd")[0].src;
-        let title = product.parentElement.parentElement.getElementsByClassName("content-product-h3")[0].innerText;
-        let price = product.parentElement.getElementsByClassName("price")[0].innerText;
-        addItemToCart(title, price, img)
-        // Khi thêm sản phẩm vào giỏ hàng thì sẽ hiển thị modal
-        modal.style.display = "block";
-
-        updatecart()
-    })
-}
-
-function addItemToCart(title, price, img) {
-    let cartRow = document.createElement('div');
-    cartRow.classList.add('cart-row')
-    let cartItems = document.getElementsByClassName('cart-items')[0];
-    let cart_title = cartItems.getElementsByClassName('cart-item-title');
-    // Nếu title của sản phẩm bằng với title mà bạn thêm vao giỏ hàng thì sẽ thông cho user.
-    for (let i = 0; i < cart_title.length; i++) {
-        if (cart_title[i].innerText === title) {
-            alert('Sản Phẩm Đã Có Trong Giỏ Hàng')
-            return
-        }
+            '                </tr>';
+        document.getElementById('mycart').innerHTML = ttgh;
+    }
+    function showcart(){
+      let x= document.getElementById("showcart");
+      if(x.style.display == "block"){
+          x.style.display = "none";
+      }else{
+          x.style.display = "block";
+      }
+      showmycart();
     }
 
-    cartRow.innerHTML = `
-  <div class="cart-item cart-column">
-      <img class="cart-item-image" src="${img}" width="100" height="100" alt="#">
-      <span class="cart-item-title">${title}</span>  
-  </div>
-      <span class="cart-price cart-column">${price}</span>
-  <div class="cart-quantity cart-column">
-      <input class="cart-quantity-input" type="number" value="1">
-      <button class="btn btn-danger" type="button">Xóa</button>
-  </div>`
-    cartItems.append(cartRow)
-    cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', function () {
-        let button_remove = event.target;
-        button_remove.parentElement.parentElement.remove()
-        updatecart()
-    })
-    cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', function (event) {
-        let input = event.target;
-        if (isNaN(input.value) || input.value <= 0) {
-            input.value = 1;
+
+    function showgiohang_trangthanhtoan(){
+        var gh=sessionStorage.getItem("giohang");
+        var giohang=JSON.parse(gh);
+        var ttgh="";
+        var tong=0;
+        for (let i =0;i<giohang.length;i++){
+            var tt=parseInt(giohang[i][2]) * parseInt(giohang[i][3]);
+            tong += tt;
+            ttgh+='<tr>\n' +
+                '                    <td>'+(i + 1)+'</td>\n' +
+                '                    <td><img src="'+giohang[i][0]+'" alt=""></td>\n' +
+                '                    <td>'+giohang[i][1]+'</td>\n' +
+                '                    <td>'+giohang[i][2]+'</td>\n' +
+                '                    <td>'+giohang[i][3]+'</td>\n' +
+                '                    <td>\n' +
+                '                        <div>'+ tt +'</div>\n' +
+                '                    </td>\n' +
+                '                </tr>';
         }
-        updatecart()
-    })
-}
+        ttgh += '<tr>\n' +
+            '                    <th colspan="5">Tổng đơn hàng</th>\n' +
+            '                    <th>\n' +
+            '                    <div>'+ tong + '</div>\n' +
+            '                    </th>\n' +
+
+            '                </tr>';
+        document.getElementById('mycart').innerHTML = ttgh;
+    }
+    function dongydathang(){
+      var hoten = document.getElementById("hoten").value;
+      var diachi = document.getElementById("diachi").value;
+      var dienthoai = document.getElementById("dienthoai").value;
+      var email = document.getElementById("email").value;
+
+      var ngnhan = new Array(hoten,diachi,dienthoai,email);
+      console.log(ngnhan);
+      sessionStorage.setItem("ngnhan",JSON.stringify(ngnhan));
+
+      window.location.assign("payment.html");
+    }
+    function showthongtinnguoinhan(){
+        var ngnhan = sessionStorage.getItem("ngnhan");
+        var thongtin = JSON.parse(ngnhan);
+
+        tt='<tr>\n' +
+            '                            <td width="20%">Họ tên</td>\n' +
+            '                            <td>'+thongtin[0]+'</td>\n' +
+            '                        </tr>\n' +
+            '                        <tr>\n' +
+            '                            <td>Địa chỉ</td>\n' +
+            '                            <td>'+thongtin[1]+'</td>\n' +
+            '                        </tr>\n' +
+            '                        <tr>\n' +
+            '                            <td>Điện thoại</td>\n' +
+            '                            <td>'+thongtin[2]+'</td>\n' +
+            '                        </tr>\n' +
+            '                        <tr>\n' +
+            '                            <td>Email</td>\n' +
+            '                            <td>'+thongtin[3]+'</td>\n' +
+            '                        </tr>';
+
+        document.getElementById('thongtinnhanhang').innerHTML = tt;
+
+    }
 
